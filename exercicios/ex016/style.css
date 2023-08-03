@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+body{
+    
+    /* shorthand font
+    - font-style -> font-weight -> font-size -> font family
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1em;
+    font-style: italic; */
+    font: italic lighter 1em Arial, sans-serif;
+}
