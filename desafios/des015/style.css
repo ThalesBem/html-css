@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 83);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+.container {
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 50vw;
+    border-radius: 20px;
+    background-image: url(images/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 305px;
+    background-position: 95% 50%; 
+}
+
+.container h1{
+    text-align: center;
+    /* border: 2px solid black; */
+    color: rgb(0, 0, 83);
+    font-family: Roboto-Bold;
+    width: fit-content;
+    margin-left: 50px;
+    margin-top: 70px;
+    font-size: 50px;
+}
+
+.container p {
+    /* border: 2px solid black;*/
+    width: fit-content;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.container ul{
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container li{
+    height: 22px;
+    list-style: none;
+    background: url(images/icon-list.svg) left center no-repeat;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+#emailtext {
+    margin-top: 10px;
+}
+
+input {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#text {
+    margin-top: 20px;
+    padding-left: 2px;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    width: 303.2px;
+    margin-left: 50px;
+    border-radius: 5px;
+    height: 50px;
+    background-color: rgb(0, 0, 83);
+    color: white;
+}
