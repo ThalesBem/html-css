@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1900px){
+    body {
+        background-color: rgb(36, 36, 36);
+    }
+
+    main {
+        background-color: white;
+        margin: auto;
+        margin-top: 300px;
+        width: 700px;
+        height: 450px;
+        border-radius: 20px;
+    }
+
+    img#mobile {
+        display: none;
+    }
+
+    #desktop {
+        width: 300px;
+        margin-top: 15px;
+        margin-left: 390px;
+        height: 420px;
+    }
+
+    h1 {
+        font-family: Roboto-Bold;
+        color: rgb(0, 0, 56);
+        margin-top: -380px;
+        margin-left: 50px;
+    }
+
+    #subtitle {
+        display: block;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        font-family: Roboto-Regular;
+        font-size: 11px;
+        color: blue;
+    }
+    
+    .container ul{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 8px;
+    }
+    
+    .container li{
+        height: 22px;
+        list-style: none;
+        background: url(images/icon-list.svg) left center no-repeat;
+        padding-left: 30px;
+        margin-bottom: 5px;
+        padding-top: 5px;
+        font-size: 12px;
+        font-family: Roboto-Regular;
+    }
+    
+    #ptext {
+        font-family: Roboto-Regular;
+        color: rgb(0, 0, 37);
+        font-size: 13px;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        margin-left: 50px;
+    }
+    
+    input {
+        margin-left: 50px;
+        width: 240px;
+        height: 40px;
+        border-radius: 5px;
+    }
+    
+    input::placeholder {
+        padding-left: 20px;
+        font-size: 15px;
+    }
+    
+    button {
+        display: block;
+        margin-top: 12px;
+        width: 248px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        height: 40px;
+        background-color: rgb(0, 0, 83);
+        color: white;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+}

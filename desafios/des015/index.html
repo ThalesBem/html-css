@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter form</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    
 </head>
 <body>
     <main>
+        <img src="images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile" id="mobile">
+        <img src="images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop" id="desktop">
         <div class="container">
             <h1>Stay updated!</h1>
-            <p>Join 60,000+ product managers receiving monthly <br> updates on:</p>
+            <p id="subtitle">Join 60,000+ product managers receiving monthly <br> updates on:</p>
             <ul>
                 <li>Product discovery and building what matters</li>
-                <li>Measuring to ensure updtaes are a success</li>
+                <li>Measuring to ensure updates are a success</li>
                 <li>And much more!</li>
             </ul>
-            <form action="post">
+            <form action="#" id="form">
                 <label for="iemail">
-                    <p id="text">Email address</p>
+                    <p id="ptext">Email address</p>
                 <input type="email" name="email" id="iemail" placeholder="email@company.com">
                 </label>
-                <button type="submit">Subscribe to monthly newsletter</button>
+                <button onclick="validation()" type="submit">Subscribe to monthly newsletter</button>
             </form>
         </div>
+        <script src="index.js"></script>
     </main>
 </body>
 </html>
