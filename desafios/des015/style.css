@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     
 * {
     margin: 0;
@@ -18,97 +18,92 @@
 }
 
 body, html {
-    width: 100vw;
-    height: 100vh;
-
-}
-
-body {
-    background-color: rgb(36, 36, 36);
-}
-
-main {
     background-color: white;
-    margin: auto;
-    margin-top: 100px;
-    width: 400px;
-    border-radius: 20px;
-}
-
-img#mobile {
-    width: 400px;
-    border-radius: 20px;
-    box-sizing: border-box;
-}
-
-img#desktop {
-    display: none;
-}
+  }
 
 h1 {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 35px;
+    margin-bottom: 15px;
     font-family: Roboto-Bold;
-    color: rgb(0, 0, 56);
+    font-size: 40px;
+    color: rgb(0, 0, 34);
+  }
+
+p {
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font-family: Roboto-Regular;
+}
+
+#pemail, span {
+    display: inline;
+}
+
+span {
+    margin-left: 158px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 #subtitle {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    font-family: Roboto-Regular;
-}
-
-.container ul{
-    margin-left: 40px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.container li{
-    height: 22px;
-    list-style: none;
-    background: url(images/icon-list.svg) left center no-repeat;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    margin-left: -20px;
-    padding-top: 5px;
+    width: 300px;
     font-size: 14px;
-    font-family: Roboto-Regular;
 }
 
-#ptext {
-    font-family: Roboto-Regular;
-    color: rgb(0, 0, 37);
-    font-size: 13px;
-    font-weight: bolder;
-    margin-bottom: 10px;
-    margin-left: 22px;
+#pemail {
+    font-size: 12px;
+    font-weight: bold;
 }
 
-input {
+img {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+ul {
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+input#iemail {
     margin-top: 10px;
-    margin-left: 22px;
-    width: 350px;
+    margin-left: 30px;
+    margin-bottom: 20px;
     height: 50px;
+    width: 380px;
     border-radius: 5px;
+}
+
+input:hover {
+    cursor: pointer;
 }
 
 input::placeholder {
     padding-left: 20px;
-    font-size: 15px;
 }
 
-button {
-    margin-top: 20px;
-    width: 355px;
-    margin-left: 22px;
-    margin-bottom: 30px;
-    border-radius: 5px;
+input#button {
+    display: block;
+    margin-left: 30px;
     height: 50px;
-    background-color: rgb(0, 0, 83);
+    width: 385px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     color: white;
-    font-weight: bolder;
-    font-size: 15px;
+    background-color: rgb(0, 0, 34);
 }
+
+#button:hover {
+    cursor: pointer;
+}
+
+
+
 }

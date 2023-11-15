@@ -5,31 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsletter form</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaquery.css">
     <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     
 </head>
 <body>
+    <header>
+        <img src="images/illustration-sign-up-mobile.svg" alt="illustration sign up mobile">
+    </header>
     <main>
-        <img src="images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile" id="mobile">
-        <img src="images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop" id="desktop">
-        <div class="container">
-            <h1>Stay updated!</h1>
-            <p id="subtitle">Join 60,000+ product managers receiving monthly <br> updates on:</p>
-            <ul>
-                <li>Product discovery and building what matters</li>
-                <li>Measuring to ensure updates are a success</li>
-                <li>And much more!</li>
-            </ul>
-            <form action="#" id="form">
-                <label for="iemail">
-                    <p id="ptext">Email address</p>
-                <input type="email" name="email" id="iemail" placeholder="email@company.com">
-                </label>
-                <button onclick="validation()" type="submit">Subscribe to monthly newsletter</button>
-            </form>
-        </div>
-        <script src="index.js"></script>
+        <h1>Stay updated!</h1>
+        <p id="subtitle">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+        </ul>
+        <p id="pemail">Email address</p>
+        <span id="text"></span>
+        <form action="#" id="form">
+            <input type="email" name="email" id="iemail" placeholder="email@company.com">
+            <input type="button" value="Subscribe to monthly newsletter" id="button" onclick="validation()">
+        </form>
     </main>
+<script src="index.js"></script>
 </body>
 </html>
